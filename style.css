@@ -13,7 +13,6 @@
     top: 0;
     width: 100vw;
     height: 10vh;
-
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
     color: white;
     font-size: 25px;
@@ -60,6 +59,7 @@
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -111,8 +111,6 @@
 
 /* ------------------------------------------------------------------------------- */
 .page2 {
-    width: 100vw;
-    height: 100vh;
     background-color: black;
     width: 100vw;
     height: 68vh;
@@ -130,18 +128,21 @@
     text-align: justify;
     font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", "sans-serif";
     padding-left: 200px;
-    overflow: hidden;
+    padding-right: 300px;
+    overflow: wrap;
 }
 
 .page2 .section1 h1 {
     font-weight: bolder;
     font-size: 45px;
+    margin-right: 20px;
 }
 
 .page2 .section1 p {
     margin-top: 10px;
     font-weight: 200;
     font-size: 25px;
+    text-wrap: wrap;
 }
 
 .page2 .section2 {
@@ -167,13 +168,12 @@
 
 /* _____________________________ */
 .page3 {
-    width: 100vw;
-    height: 100vh;
     background-color: black;
     width: 100vw;
     height: 68vh;
     margin-top: 7px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
 
 }
@@ -182,6 +182,7 @@
     width: 50vw;
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
     border-width: 3px;
 
 }
@@ -255,10 +256,10 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    text-align: justify;
 }
 
 .page3 .section2 h1 {
+    margin-right: 175px;
     font-weight: bolder;
     font-size: 50px;
 
@@ -268,7 +269,6 @@
     margin-top: 10px;
     font-weight: 200;
     font-size: 25px;
-    font-weight: 500;
 }
 
 
@@ -295,11 +295,16 @@
 .page4 .text h1 {
     font-size: 45px;
     font-weight: bolder;
+    padding-right: 80%;
 
 }
 
 .page4 .text p {
+    padding-right: 70%;
+
     font-size: 25px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", "sans-serif";
+
 }
 
 /* ___________________________
@@ -368,7 +373,6 @@
 
 .page6 .page6-content {
     padding-top: 50px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -479,6 +483,8 @@
     color: white;
     font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", "sans-serif";
     font-weight: 500;
+    overflow: hidden;
+
 }
 
 .last-sec .content {
@@ -492,6 +498,9 @@
 
 .last-sec .content .first-list ul {
     list-style: none;
+    flex-wrap:wrap;
+    column-count: 4;
+    column-gap: 225px;
 }
 
 .last-sec .content .first-list ul li {
@@ -524,53 +533,313 @@
     color: red
 }
 
-.last-sec .content .second-list ul {
-    list-style: none;
-}
+/* -------------------------------------------------------------
+ */
 
-.last-sec .content .second-list ul li {
-    padding-top: 25px;
-}
 
-.last-sec .content .second-list ul li a {
-    text-decoration: none;
-    color: grey;
-}
 
-.last-sec .content .second-list ul li a:active {
-    color: red
-}
 
-.last-sec .content .third-list ul {
-    list-style: none;
-}
 
-.last-sec .content .third-list ul li {
-    padding-top: 25px;
-}
+ /* MOBILE VIEW */
+@media (max-width:480px) {
+    .page1 {
+        height: 70vh;
+        width: 100%;
+    }
 
-.last-sec .content .third-list ul li a {
-    text-decoration: none;
-    color: grey;
-}
+    .page1 .navbar {
+        height: 8vh;
+    }
 
-.last-sec .content .third-list ul li a:active {
-    color: red
-}
+    .page1 .navbar .logo {
+        margin-left: 25px;
+    }
 
-.last-sec .content .fourth-list ul {
-    list-style: none;
-}
+    .page1 .navbar .logo a img {
 
-.last-sec .content .fourth-list ul li {
-    padding-top: 25px;
-}
+        width: 80px;
+    }
 
-.last-sec .content .fourth-list ul li a {
-    text-decoration: none;
-    color: grey;
-}
+    .page1 .navbar .btn {
+        margin-right: 25px;
+    }
 
-.last-sec .content .fourth-list ul li a:active {
-    color: red
+    .page1 .navbar .btn button {
+        padding: 6px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .page1 .content1 h1 {
+        font-size: 34px;
+        font-weight: bolder;
+        margin-bottom: 15px;
+    }
+
+    .page1 .content1 p {
+        font-size: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .page1 .content2 button {
+        margin-top: 2%;
+    }
+
+    /* ******************************************************************
+
+*/
+    .page2 {
+        width: 100%;
+        height: 70vh;
+        flex-direction: column;
+    }
+
+
+    .page2 .section1 {
+        padding-top: 6%;
+        height: 30%;
+        width: 100vw;
+        padding-left: 20px;
+        justify-content: center;
+        align-items: center;
+        font-weight: normal;
+        text-overflow: clip;
+
+    }
+
+    .page2 .section1 h1 {
+        font-size: 33px;
+        text-wrap: pretty;
+
+    }
+
+    .page2 .section1 div p {
+        font-size: 18px;
+        font-weight: 400;
+        padding-right: 30px;
+        text-align: center;
+        text-wrap: wrap;
+
+    }
+
+    .page2 .section2 img {
+        margin-top: 12vh;
+        right: 10.5%;
+        width: 80%;
+    }
+
+    .page2 .section2 video {
+        margin-top: 16.5vh;
+        width: 58%;
+        right: 22%;
+    }
+
+
+
+    /* *********************************************************** */
+
+
+    .page3 {
+        flex-direction: column-reverse;
+    }
+
+    .page3 .section1 {
+        width: 100%;
+        height: 60%;
+        overflow: hidden;
+    }
+
+    .page3 .section1 #first {
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        margin-top: -10%;
+    }
+
+    .page3 .section1 .section1-in #inner {
+        top: 180%;
+        left: 15%;
+
+    }
+
+    .page3 .section1 #inner img {
+        width: 50px;
+    }
+
+    .page3.section1 #inner #animation img {
+        padding-left: 70px;
+    }
+
+    .page3 .section1 .section1-in {
+        height: 100px;
+        width: 325px;
+    }
+
+    .page3 .section2 {
+        width: 100vw;
+        height: 40%;
+    }
+
+    .page3 .section2 h1 {
+
+        text-align: center;
+        margin-right: 1%;
+        margin-left: 5%;
+        font-size: 30px;
+    }
+
+    .page3 .section2 p {
+        font-size: 17px;
+        text-align: center;
+        margin-left: 9%;
+        margin-right: 9%;
+
+    }
+
+    /* *********************************************************** */
+    .page4 {
+        height: 35vh;
+    }
+
+    .page4 .text {
+        margin-left: 0;
+        text-align: center;
+        padding-top: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .page4 .text h1 {
+        padding-right: 0;
+        padding-top: 12%;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .page4 .text p {
+        padding-right: 0;
+
+        margin-left: 5%;
+        margin-right: 5%;
+        font-weight: 470;
+        font-size: 17px;
+        margin-top: 5%;
+    }
+
+    /* ************************************************************* */
+
+    .page5 {
+        flex-direction: column-reverse;
+    }
+
+    .page5 .section1-page5 {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page5 .section1-page5 img {
+        margin-top: -13%;
+        width: 90%;
+        height: 90%;
+        padding-left: 0px;
+
+    }
+
+    .page5 .section2-page5 {
+        width: 100%;
+        height: 40%;
+        font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", "sans-serif";
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page5 .section2-page5 .page5-text {
+        margin-top: 0vh;
+        padding-left: 5.5%;
+        padding-right: 5.5%;
+    }
+
+    .page5 .section2-page5 .page5-text h1 {
+        text-align: center;
+        font-size: 35px;
+        font-weight: bold;
+
+    }
+
+    .page5 .section2-page5 .page5-text p {
+        margin-top: 5px;
+        font-weight: 470;
+        font-size: 17px;
+    }
+
+
+    /* **************************************************
+     */
+    .page6 {
+        height: 125vh;
+
+    }
+
+    /* .page6 .page6-content{
+
+    } */
+    .page6 .page6-content .faq {
+        overflow: scroll;
+    }
+
+    .page6 .page6-content h1 {
+        margin-right: 5%;
+        text-align: center;
+    }
+
+    .page6 .page6-content .faq details {
+        font-size: 17px;
+    }
+
+    .page6 .page6-content .faq details div {
+        font-size: 13px;
+        overflow: scroll;
+    }
+
+    .page6 .page6-content p {
+        font-size: 17px;
+        font-weight: 480;
+        text-align: center;
+        margin-left: 13%;
+        margin-right: 13%;
+    }
+    .page6 .page6-content .mail form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column ;
+    }
+    .page6 .page6-content .mail form button{
+        margin-top: 3%;
+    }
+
+    .last-sec {
+        height: 60vh;
+    }
+    .last-sec .content {
+        padding-top: 0%;
+        margin-left:10%;
+        margin-right: 0px;
+    }
+    .last-sec .content .first-list ul {
+        list-style: none;
+        column-count: 2;
+        column-gap: 20px;
+    }
+
+
 }

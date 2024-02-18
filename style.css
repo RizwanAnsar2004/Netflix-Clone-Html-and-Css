@@ -1,0 +1,576 @@
+.html {
+    scroll-behavior: smooth;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 10vh;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    margin-left: 200px;
+}
+
+.navbar .btn {
+    margin-right: 200px;
+}
+
+.navbar .btn button {
+    padding: 10px;
+    padding-left: 23px;
+    padding-right: 23px;
+    border-radius: 5px;
+    background-color: rgb(229, 9, 20);
+}
+
+.navbar .btn button:hover {
+    background-color: rgb(202, 5, 15);
+    cursor: pointer;
+
+}
+
+.navbar .btn button a {
+    color: white;
+    text-decoration: none;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", "sans-serif";
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.page1 {
+    width: 100vw;
+    height: 78vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assessts/back1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", "sans-serif";
+    text-align: center;
+    color: white;
+}
+
+.page1 .content1 h1 {
+    font-weight: bolder;
+    margin-bottom: 15px;
+    font-size: 45px;
+}
+
+.page1 .content1 p {
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.page1 .content2 input {
+    height: 50px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", "sans-serif";
+    width: 331.438px;
+    border-radius: 5px;
+    background-color: black;
+    filter: opacity(80%);
+    padding-left: 6px;
+    font-size: 20px;
+    color: white;
+}
+
+.page1 .content2 button {
+    margin-left: 5px;
+    height: 50px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", "sans-serif";
+    width: 207.25px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(229, 9, 20);
+}
+
+.page1 .content2 button:hover {
+    background-color: rgb(202, 5, 15);
+    cursor: pointer;
+
+
+}
+
+/* ------------------------------------------------------------------------------- */
+.page2 {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    width: 100vw;
+    height: 68vh;
+    margin-top: 7px;
+    display: flex;
+}
+
+.page2 .section1 {
+    width: 50vw;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", "sans-serif";
+    padding-left: 200px;
+    overflow: hidden;
+}
+
+.page2 .section1 h1 {
+    font-weight: bolder;
+    font-size: 45px;
+}
+
+.page2 .section1 p {
+    margin-top: 10px;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+.page2 .section2 {
+    width: 50vw;
+    height: 100%;
+    color: white;
+}
+
+.page2 .section2 img {
+    width: 700px;
+    position: absolute;
+    /* top: 5%;
+    left: 5%; */
+    right: 10.5%;
+}
+
+.page2 .section2 video {
+    position: absolute;
+    top: 92%;
+    right: 290px;
+    width: 510px;
+}
+
+/* _____________________________ */
+.page3 {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    width: 100vw;
+    height: 68vh;
+    margin-top: 7px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.page3 .section1 {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    border-width: 3px;
+
+}
+
+.page3 .section1 #first {
+    width: 650px;
+    position: absolute;
+    left: 225px;
+}
+
+.page3 .section1 .section1-in {
+    height: 100px;
+    width: 400px;
+
+}
+
+.page3 .section1 .section1-in #inner {
+
+    position: relative;
+    top: 360%;
+    left: 90%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", "sans-serif";
+}
+
+.page3 .section1 .section1-in #inner .in-1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.page3 .section1 .section1-in #inner .text {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+    text-wrap: nowrap;
+
+}
+
+.page3 .section1 #inner .text h5 {
+    font-size: 18px;
+}
+
+.page3 .section1 #inner .text p {
+    color: rgb(0, 102, 255);
+}
+
+.page3 .section1 #inner img {
+    padding-left: 7px;
+    padding-top: 5px;
+    width: 65px;
+}
+
+.page3.section1 #inner #animation img {
+    padding-left: 100px;
+}
+
+.page3 .section2 {
+    width: 50vw;
+    height: 100%;
+    color: white;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", "sans-serif";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: justify;
+}
+
+.page3 .section2 h1 {
+    font-weight: bolder;
+    font-size: 50px;
+
+}
+
+.page3 .section2 p {
+    margin-top: 10px;
+    font-weight: 200;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+
+
+/* ________
+ */
+.page4 {
+
+    background-color: black;
+    width: 100vw;
+    height: 45vh;
+    margin-top: 7px;
+    color: white;
+
+}
+
+.page4 .text {
+    margin-left: 525px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", "sans-serif";
+    padding-top: 100px;
+}
+
+.page4 .text h1 {
+    font-size: 45px;
+    font-weight: bolder;
+
+}
+
+.page4 .text p {
+    font-size: 25px;
+}
+
+/* ___________________________
+ */
+.page5 {
+    background-color: black;
+    width: 100vw;
+    height: 73vh;
+    margin-top: 7px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.page5 .section1-page5 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page5 .section1-page5 img {
+    width: 80%;
+    height: 80%;
+    padding-left: 120px;
+
+}
+
+.page5 .section2-page5 {
+    width: 50%;
+    height: 100%;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", "sans-serif";
+    color: white;
+    text-align: start;
+
+}
+
+.page5 .section2-page5 .page5-text {
+    margin-top: 29vh;
+    padding-left: 30px;
+    padding-right: 150px;
+
+}
+
+.page5 .section2-page5 .page5-text h1 {
+    font-size: 45px;
+}
+
+.page5 .section2-page5 .page5-text p {
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+/* --------------------------- */
+.page6 {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 7px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", "sans-serif";
+    color: white;
+
+}
+
+
+.page6 .page6-content {
+    padding-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page6 .page6-content .faq {
+    height: 70vh;
+    width: 80vw;
+    /* background-color: grey; */
+    overflow: hidden;
+
+}
+
+.page6 .page6-content .faq details {
+    background-color: black;
+    font-size: 22px;
+    margin-bottom: 11px;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out 0.2s;
+
+}
+
+.page6 .page6-content .faq details div {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: rgb(80, 80, 80);
+
+}
+
+.page6 .page6-content .faq details summary {
+    /* margin-top: 5px; */
+    cursor: pointer;
+    padding: 15px;
+    transition: margin 150ms ease-in-out;
+    background-color: rgb(56, 55, 55);
+
+}
+
+.page6 .page6-content .faq details summary:hover {
+    background-color: rgb(80, 80, 80);
+
+}
+
+.page6 .page6-content .faq details[open] summary {
+    margin-bottom: 2px;
+}
+
+
+
+.page6 .page6-content h1 {
+    padding-bottom: 20px;
+}
+
+.page6 .page6-content .mail {
+    display: flex;
+
+}
+
+.page6 .page6-content input {
+    height: 50px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", "sans-serif";
+    width: 331.438px;
+    border-radius: 5px;
+    background-color: rgb(56, 55, 55);
+    filter: opacity(100%);
+    padding-left: 6px;
+    font-size: 20px;
+
+}
+
+.page6 .page6-content .mail form button {
+    margin-left: 10px;
+    height: 50px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", "sans-serif";
+    background-color: rgb(229, 9, 20);
+    width: 200px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+
+}
+
+.page6 .page6-content .mail form button:hover {
+    background-color: rgb(202, 5, 15);
+    cursor: pointer;
+
+}
+
+.page6 .page6-content p {
+    padding-top: 30px;
+    font-size: 20px;
+    padding-bottom: 13px;
+}
+
+/* _____________________
+ */
+
+
+.last-sec {
+    margin-top: 7px;
+    height: 55vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", "sans-serif";
+    font-weight: 500;
+}
+
+.last-sec .content {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-top: 70px;
+}
+
+.last-sec .content .first-list ul {
+    list-style: none;
+}
+
+.last-sec .content .first-list ul li {
+    color: grey;
+    padding-top: 25px;
+}
+
+.last-sec .content .first-list ul li select {
+    background-color: rgb(56, 55, 55);
+    filter: opacity(100%);
+    color: white;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", "sans-serif";
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.last-sec .content .first-list ul li select:active {
+    border-color: white;
+}
+
+.last-sec .content .first-list ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
+.last-sec .content .first-list ul li a:active {
+    color: red
+}
+
+.last-sec .content .second-list ul {
+    list-style: none;
+}
+
+.last-sec .content .second-list ul li {
+    padding-top: 25px;
+}
+
+.last-sec .content .second-list ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
+.last-sec .content .second-list ul li a:active {
+    color: red
+}
+
+.last-sec .content .third-list ul {
+    list-style: none;
+}
+
+.last-sec .content .third-list ul li {
+    padding-top: 25px;
+}
+
+.last-sec .content .third-list ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
+.last-sec .content .third-list ul li a:active {
+    color: red
+}
+
+.last-sec .content .fourth-list ul {
+    list-style: none;
+}
+
+.last-sec .content .fourth-list ul li {
+    padding-top: 25px;
+}
+
+.last-sec .content .fourth-list ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
+.last-sec .content .fourth-list ul li a:active {
+    color: red
+}

@@ -553,6 +553,9 @@ body{
         box-sizing: border-box;
     }
     
+    body{
+        overflow-x: hidden !important;
+    }
     .page1 {
         height: 70vh;
         width: 100%;
